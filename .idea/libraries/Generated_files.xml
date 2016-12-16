@@ -1,0 +1,21 @@
+<component name="libraryTable">
+  <library name="Generated files" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/src/components/HomePage-compiled.js" />
+        <item url="file://$PROJECT_DIR$/src/components/LoginPage-compiled.js" />
+        <item url="file://$PROJECT_DIR$/src/App-compiled.js" />
+        <item url="file://$PROJECT_DIR$/src/components/BottomNav-compiled.js" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/src/components-compiled.js" />
+      <root url="file://$PROJECT_DIR$/src/components-compiled.js" />
+      <root url="file://$PROJECT_DIR$/src/components/HomePage-compiled.js" />
+      <root url="file://$PROJECT_DIR$/src/components/LoginPage-compiled.js" />
+      <root url="file://$PROJECT_DIR$/src/App-compiled.js" />
+      <root url="file://$PROJECT_DIR$/src/components/BottomNav-compiled.js" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>
