@@ -53,7 +53,6 @@ var BottomNavigationExampleSimple = function (_React$Component) {
 	_createClass(BottomNavigationExampleSimple, [{
 		key: 'select',
 		value: function select(index) {
-			this.setState({ selectedIndex: index });
 			switch (index) {
 				case 0:
 					window.location.href = "#/home/";

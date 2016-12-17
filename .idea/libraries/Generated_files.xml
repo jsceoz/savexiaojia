@@ -3,17 +3,36 @@
     <properties>
       <sourceFilesUrls>
         <item url="file://$PROJECT_DIR$/src/components/HomePage-compiled.js" />
+        <item url="file://$PROJECT_DIR$/src/components/ZhuPage-compiled.js" />
+        <item url="file://$PROJECT_DIR$/src/components/QAPage-compiled.js" />
         <item url="file://$PROJECT_DIR$/src/components/LoginPage-compiled.js" />
+        <item url="file://$PROJECT_DIR$/src/components/MapPage-compiled.js" />
         <item url="file://$PROJECT_DIR$/src/App-compiled.js" />
+        <item url="file://$PROJECT_DIR$/src/components/XuePage-compiled.js" />
+        <item url="file://$PROJECT_DIR$/src/components/ShiPage-compiled.js" />
         <item url="file://$PROJECT_DIR$/src/components/BottomNav-compiled.js" />
       </sourceFilesUrls>
     </properties>
     <CLASSES>
       <root url="file://$PROJECT_DIR$/src/components-compiled.js" />
       <root url="file://$PROJECT_DIR$/src/components-compiled.js" />
+      <root url="file://$PROJECT_DIR$/src/ZhuPage-compiled.js" />
+      <root url="file://$PROJECT_DIR$/src/ZhuPage-compiled.js" />
+      <root url="file://$PROJECT_DIR$/src/googlemaps-compiled.js" />
+      <root url="file://$PROJECT_DIR$/src/googlemaps-compiled.js" />
+      <root url="file://$PROJECT_DIR$/public/gmaps-compiled.js" />
+      <root url="file://$PROJECT_DIR$/src/gmaps-compiled.js" />
+      <root url="file://$PROJECT_DIR$/src/gmaps-compiled.js" />
+      <root url="file://$PROJECT_DIR$/public/gmaps-compiled.js" />
+      <root url="file://$PROJECT_DIR$/src/gmaps-compiled.js" />
       <root url="file://$PROJECT_DIR$/src/components/HomePage-compiled.js" />
+      <root url="file://$PROJECT_DIR$/src/components/ZhuPage-compiled.js" />
+      <root url="file://$PROJECT_DIR$/src/components/QAPage-compiled.js" />
       <root url="file://$PROJECT_DIR$/src/components/LoginPage-compiled.js" />
+      <root url="file://$PROJECT_DIR$/src/components/MapPage-compiled.js" />
       <root url="file://$PROJECT_DIR$/src/App-compiled.js" />
+      <root url="file://$PROJECT_DIR$/src/components/XuePage-compiled.js" />
+      <root url="file://$PROJECT_DIR$/src/components/ShiPage-compiled.js" />
       <root url="file://$PROJECT_DIR$/src/components/BottomNav-compiled.js" />
     </CLASSES>
     <SOURCES />

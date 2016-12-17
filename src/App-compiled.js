@@ -24,6 +24,28 @@ var _HomePage = require('./components/HomePage');
 
 var _HomePage2 = _interopRequireDefault(_HomePage);
 
+var _XuePage = require('./components/XuePage');
+
+var _XuePage2 = _interopRequireDefault(_XuePage);
+
+var _ShiPage = require('./components/ShiPage');
+
+var _ShiPage2 = _interopRequireDefault(_ShiPage);
+
+var _ZhuPage = require('./components/ZhuPage');
+
+var _ZhuPage2 = _interopRequireDefault(_ZhuPage);
+
+var _MapPage = require('./components/MapPage');
+
+var _MapPage2 = _interopRequireDefault(_MapPage);
+
+var _QAPage = require('./components/QAPage');
+
+var _QAPage2 = _interopRequireDefault(_QAPage);
+
+var _reactRouter = require('react-router');
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -47,7 +69,21 @@ var App = function (_Component) {
       return _react2.default.createElement(
         _MuiThemeProvider2.default,
         null,
-        _react2.default.createElement(_HomePage2.default, null)
+        _react2.default.createElement(
+          'div',
+          { className: 'index' },
+          _react2.default.createElement(
+            _reactRouter.Router,
+            { history: _reactRouter.hashHistory },
+            _react2.default.createElement(_reactRouter.Route, { path: '/home', component: _HomePage2.default }),
+            _react2.default.createElement(_reactRouter.Route, { path: '/', component: _LoginPage2.default }),
+            _react2.default.createElement(_reactRouter.Route, { path: '/map', component: _MapPage2.default }),
+            _react2.default.createElement(_reactRouter.Route, { path: '/qa', component: _QAPage2.default }),
+            _react2.default.createElement(_reactRouter.Route, { path: '/shi', component: _ShiPage2.default }),
+            _react2.default.createElement(_reactRouter.Route, { path: '/xue', component: _XuePage2.default }),
+            _react2.default.createElement(_reactRouter.Route, { path: '/zhu', component: _ZhuPage2.default })
+          )
+        )
       );
     }
   }]);

@@ -26,6 +26,10 @@ var _Paper = require('material-ui/Paper');
 
 var _Paper2 = _interopRequireDefault(_Paper);
 
+var _Divider = require('material-ui/Divider');
+
+var _Divider2 = _interopRequireDefault(_Divider);
+
 var _BottomNav = require('./BottomNav');
 
 var _BottomNav2 = _interopRequireDefault(_BottomNav);
@@ -69,22 +73,38 @@ var HomePage = function (_React$Component) {
 						null,
 						_react2.default.createElement(
 							'li',
-							null,
+							{
+								onClick: function onClick() {
+									return window.location.href = "#/xue";
+								}
+							},
 							'\u5B66'
 						),
 						_react2.default.createElement(
 							'li',
-							null,
+							{
+								onClick: function onClick() {
+									return window.location.href = "#/shi";
+								}
+							},
 							'\u98DF'
 						),
 						_react2.default.createElement(
 							'li',
-							null,
+							{
+								onClick: function onClick() {
+									return window.location.href = "#/zhu";
+								}
+							},
 							'\u4F4F'
 						),
 						_react2.default.createElement(
 							'li',
-							null,
+							{
+								onClick: function onClick() {
+									return window.location.href = "#/map";
+								}
+							},
 							'\u884C'
 						)
 					)
@@ -95,10 +115,23 @@ var HomePage = function (_React$Component) {
 					_react2.default.createElement(
 						_Menu2.default,
 						null,
-						_react2.default.createElement(_MenuItem2.default, { primaryText: '\u5230\u6821\u63A8\u8350\u8DEF\u5F84' }),
-						_react2.default.createElement(_MenuItem2.default, { primaryText: '\u6821\u56ED\u666F\u70B9\u67E5\u8BE2' }),
-						_react2.default.createElement(_MenuItem2.default, { primaryText: '\u6821\u56ED\u751F\u6D3B\u8BAF\u606F' }),
-						_react2.default.createElement(_MenuItem2.default, { primaryText: '\u65B0\u751F\u95EE\u7B54' })
+						_react2.default.createElement(_MenuItem2.default, {
+							onClick: function onClick() {
+								return window.location.href = "#/map";
+							},
+							primaryText: '\u5230\u6821\u63A8\u8350\u8DEF\u5F84' }),
+						_react2.default.createElement(_Divider2.default, null),
+						_react2.default.createElement(_MenuItem2.default, {
+							onClick: function onClick() {
+								return window.location.href = "#/map";
+							},
+							primaryText: '\u6821\u56ED\u666F\u70B9\u67E5\u8BE2' }),
+						_react2.default.createElement(_Divider2.default, null),
+						_react2.default.createElement(_MenuItem2.default, {
+							onClick: function onClick() {
+								return window.location.href = "#/qa";
+							},
+							primaryText: '\u65B0\u751F\u95EE\u7B54' })
 					)
 				),
 				_react2.default.createElement(_BottomNav2.default, { index: 0 })

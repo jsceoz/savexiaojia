@@ -28,4 +28,18 @@
       To create a production bundle, use `npm run build`.
     -->
   </body>
+  <script async defer
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDB8HxLVQS63XhE76Aax1RCEotQJlOpiWM&callback=initMap">
+  </script>
+  <script type="text/javascript">
+
+	  var map;
+	  function initMap() {
+		  map = new google.maps.Map(document.getElementById('map-wrapper'), {
+			  center: {lat: 30.541093, lng: 114.360734},
+			  zoom: 10
+		  });
+	  }
+
+  </script>
 </html>

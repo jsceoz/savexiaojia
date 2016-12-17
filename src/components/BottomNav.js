@@ -11,10 +11,7 @@ import '../App.css';
 
 
 class BottomNavigationExampleSimple extends React.Component {
-
-
 	select(index){
-		this.setState({selectedIndex: index});
 		switch(index)
 		{
 			case 0:
