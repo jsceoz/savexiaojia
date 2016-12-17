@@ -19,7 +19,9 @@ class ZhuPage extends React.Component {
 				/>
 				<Paper className="home-page-menu-wrapper">
 					<Menu>
-						<MenuItem primaryText="桂园宿舍" />
+						<MenuItem
+							onClick={() => window.location.href="#/sushe"}
+							primaryText="桂园宿舍" />
 						<Divider/>
 						<MenuItem primaryText="湖滨宿舍"/>
 						<Divider/>

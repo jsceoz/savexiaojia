@@ -74,10 +74,21 @@ li,ul {
 /*map page*/
 #map-wrapper {
   width: 100%;
-  height: 6 00px;
+  height: 600px;
 }
 
+/*qa page*/
+.add-btn {
+  position: absolute;
+  bottom: 80px;
+  right: 30px;
+}
 
+/*page content*/
+.page-content p {
+  padding: 0 10px;
+  line-height: 1.5em;
+}
 
 
 

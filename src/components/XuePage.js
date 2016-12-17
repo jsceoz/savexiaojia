@@ -19,7 +19,9 @@ class XuePage extends React.Component {
 				/>
 				<Paper className="home-page-menu-wrapper">
 					<Menu>
-						<MenuItem primaryText="选课攻略" />
+						<MenuItem
+							onClick={() => window.location.href="#/xuanke"}
+							primaryText="选课攻略" />
 						<Divider/>
 						<MenuItem primaryText="图书馆攻略" />
 						<Divider/>

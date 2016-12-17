@@ -19,7 +19,9 @@ class ShiPage extends React.Component {
 				/>
 				<Paper className="home-page-menu-wrapper">
 					<Menu>
-						<MenuItem primaryText="桂圆餐厅" />
+						<MenuItem
+							onClick={() => window.location.href="#/shitang"}
+							primaryText="桂圆餐厅" />
 						<MenuItem primaryText="桂圆小食" />
 						<MenuItem primaryText="桂圆食堂" />
 						<Divider/>

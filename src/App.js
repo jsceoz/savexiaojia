@@ -9,6 +9,9 @@ import ZhuPage from './components/ZhuPage';
 import MapPage from './components/MapPage';
 import QAPage from'./components/QAPage';
 import { Router, Route, hashHistory } from 'react-router'
+import XueDetail from './components/XueDetailPage';
+import ShiDetail from './components/ShiDetail';
+import ZhuDetail from './components/ZhuDetail';
 
 class App extends Component {
   render() {
@@ -23,6 +26,9 @@ class App extends Component {
             <Route path="/shi" component={ShiPage}/>
             <Route path="/xue" component={XuePage}/>
             <Route path="/zhu" component={ZhuPage}/>
+            <Route path="/xuanke" component={XueDetail}/>
+            <Route path="/sushe" component={ZhuDetail}/>
+            <Route path="/shitang" component={ShiDetail}/>
           </Router>
         </div>
       </MuiThemeProvider>

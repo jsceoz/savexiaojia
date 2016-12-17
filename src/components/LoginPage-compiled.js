@@ -58,12 +58,16 @@ var LoginPage = function (_React$Component) {
             hintText: '\u5B66\u53F7'
           }),
           _react2.default.createElement(_TextField2.default, {
+            type: 'password',
             hintText: '\u5BC6\u7801'
           }),
           _react2.default.createElement(_RaisedButton2.default, {
             className: 'login-btn',
             label: '\u767B\u5F55',
             primary: true,
+            onClick: function onClick() {
+              return window.location.href = "#/home";
+            },
             fullWidth: true
           })
         ),

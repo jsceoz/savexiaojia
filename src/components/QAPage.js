@@ -5,6 +5,9 @@ import React from 'react';
 import AppBar from 'material-ui/AppBar';
 import BottomNav from './BottomNav';
 import {Card, CardActions, CardHeader, CardText} from 'material-ui/Card';
+import FloatingActionButton from 'material-ui/FloatingActionButton';
+import ContentAdd from 'material-ui/svg-icons/content/add';
+
 
 
 class QAPage extends React.Component {
@@ -27,6 +30,9 @@ class QAPage extends React.Component {
 						subtitle="听同学说挺贵的"
 					/>
 				</Card>
+				<FloatingActionButton className="add-btn">
+					<ContentAdd/>
+				</FloatingActionButton>
 				<BottomNav index={0}/>
 			</div>
 		)

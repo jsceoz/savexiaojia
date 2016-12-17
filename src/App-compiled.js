@@ -46,6 +46,18 @@ var _QAPage2 = _interopRequireDefault(_QAPage);
 
 var _reactRouter = require('react-router');
 
+var _XueDetailPage = require('./components/XueDetailPage');
+
+var _XueDetailPage2 = _interopRequireDefault(_XueDetailPage);
+
+var _ShiDetail = require('./components/ShiDetail');
+
+var _ShiDetail2 = _interopRequireDefault(_ShiDetail);
+
+var _ZhuDetail = require('./components/ZhuDetail');
+
+var _ZhuDetail2 = _interopRequireDefault(_ZhuDetail);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -81,7 +93,10 @@ var App = function (_Component) {
             _react2.default.createElement(_reactRouter.Route, { path: '/qa', component: _QAPage2.default }),
             _react2.default.createElement(_reactRouter.Route, { path: '/shi', component: _ShiPage2.default }),
             _react2.default.createElement(_reactRouter.Route, { path: '/xue', component: _XuePage2.default }),
-            _react2.default.createElement(_reactRouter.Route, { path: '/zhu', component: _ZhuPage2.default })
+            _react2.default.createElement(_reactRouter.Route, { path: '/zhu', component: _ZhuPage2.default }),
+            _react2.default.createElement(_reactRouter.Route, { path: '/xuanke', component: _XueDetailPage2.default }),
+            _react2.default.createElement(_reactRouter.Route, { path: '/sushe', component: _ZhuDetail2.default }),
+            _react2.default.createElement(_reactRouter.Route, { path: '/shitang', component: _ShiDetail2.default })
           )
         )
       );
