@@ -123,7 +123,7 @@ var HomePage = function (_React$Component) {
 						_react2.default.createElement(_Divider2.default, null),
 						_react2.default.createElement(_MenuItem2.default, {
 							onClick: function onClick() {
-								return window.location.href = "#/map";
+								return window.location.href = "#/spotquery";
 							},
 							primaryText: '\u6821\u56ED\u666F\u70B9\u67E5\u8BE2' }),
 						_react2.default.createElement(_Divider2.default, null),

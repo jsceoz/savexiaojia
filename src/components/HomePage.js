@@ -40,7 +40,7 @@ class HomePage extends React.Component {
 							primaryText="到校推荐路径" />
 						<Divider/>
 						<MenuItem
-							onClick={() => window.location.href="#/map"}
+							onClick={() => window.location.href="#/spotquery"}
 							primaryText="校园景点查询" />
 						<Divider/>
 						<MenuItem

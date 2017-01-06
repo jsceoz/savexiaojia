@@ -12,6 +12,8 @@ import { Router, Route, hashHistory } from 'react-router'
 import XueDetail from './components/XueDetailPage';
 import ShiDetail from './components/ShiDetail';
 import ZhuDetail from './components/ZhuDetail';
+import SpotQuery from './components/SpotQuery';
+import AddPost from './components/AddPost';
 
 class App extends Component {
   render() {
@@ -29,6 +31,8 @@ class App extends Component {
             <Route path="/xuanke" component={XueDetail}/>
             <Route path="/sushe" component={ZhuDetail}/>
             <Route path="/shitang" component={ShiDetail}/>
+            <Route path="/spotquery" component={SpotQuery}/>
+            <Route path="/addpost" component={AddPost}/>
           </Router>
         </div>
       </MuiThemeProvider>

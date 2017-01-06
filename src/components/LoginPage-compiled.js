@@ -22,6 +22,10 @@ var _RaisedButton = require('material-ui/RaisedButton');
 
 var _RaisedButton2 = _interopRequireDefault(_RaisedButton);
 
+var _Snackbar = require('material-ui/Snackbar');
+
+var _Snackbar2 = _interopRequireDefault(_Snackbar);
+
 require('../App.css');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -35,13 +39,26 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var LoginPage = function (_React$Component) {
   _inherits(LoginPage, _React$Component);
 
-  function LoginPage() {
+  function LoginPage(props) {
     _classCallCheck(this, LoginPage);
 
-    return _possibleConstructorReturn(this, (LoginPage.__proto__ || Object.getPrototypeOf(LoginPage)).apply(this, arguments));
+    var _this = _possibleConstructorReturn(this, (LoginPage.__proto__ || Object.getPrototypeOf(LoginPage)).call(this, props));
+
+    _this.state = {
+      isOpen: false
+    };
+    return _this;
   }
 
   _createClass(LoginPage, [{
+    key: 'handleLogin',
+    value: function handleLogin() {
+      this.setState({
+        isOpen: true
+      });
+      setTimeout('window.location.href="#/home"', 1000);
+    }
+  }, {
     key: 'render',
     value: function render() {
       return _react2.default.createElement(
@@ -65,12 +82,14 @@ var LoginPage = function (_React$Component) {
             className: 'login-btn',
             label: '\u767B\u5F55',
             primary: true,
-            onClick: function onClick() {
-              return window.location.href = "#/home";
-            },
+            onClick: this.handleLogin.bind(this),
             fullWidth: true
           })
         ),
+        _react2.default.createElement(_Snackbar2.default, {
+          open: this.state.isOpen,
+          message: '\u767B\u5F55\u6210\u529F'
+        }),
         _react2.default.createElement(
           'footer',
           { className: 'login-footer' },

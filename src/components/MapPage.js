@@ -7,12 +7,12 @@ import BottomNav from './BottomNav';
 import '../App.css';
 
 class MapPage extends  React.Component {
-
 	render() {
 		return (
 			<div className="map-page">
 				<AppBar
 					title="地图"
+				  onClick={() => location.reload()}
 				/>
 				<div id="map-wrapper">
 

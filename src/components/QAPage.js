@@ -7,10 +7,28 @@ import BottomNav from './BottomNav';
 import {Card, CardActions, CardHeader, CardText} from 'material-ui/Card';
 import FloatingActionButton from 'material-ui/FloatingActionButton';
 import ContentAdd from 'material-ui/svg-icons/content/add';
-
+import $ from 'jquery'
 
 
 class QAPage extends React.Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			list: []
+		}
+	}
+
+	componentDidMount() {
+		let self = this;
+		$.ajax({
+			method: "GET",
+			url:"http://115.28.217.36/listpost/"
+		}).done(function (data) {
+			self.setState({
+				list: data
+			})
+		})
+	}
 
 	render() {
 		return (
@@ -18,20 +36,20 @@ class QAPage extends React.Component {
 				<AppBar
 					title="新生问答"
 				/>
-				<Card>
-					<CardHeader
-						title="有什么推荐的公选课吗？"
-					  subtitle="如题，有没有什么推荐的公选课"
-					/>
-				</Card>
-				<Card>
-					<CardHeader
-						title="信息学部网球场预定价格是什么样的？"
-						subtitle="听同学说挺贵的"
-					/>
-				</Card>
-				<FloatingActionButton className="add-btn">
+				{this.state.list.map((item) => (
+					<Card>
+						<CardHeader
+							title={item.title}
+							subtitle={item.content}
+						/>
+					</Card>
+				))}
+				<FloatingActionButton
+					className="add-btn"
+					onClick={() => window.location.href="#/addpost"}
+				>
 					<ContentAdd/>
+
 				</FloatingActionButton>
 				<BottomNav index={0}/>
 			</div>
